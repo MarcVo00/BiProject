@@ -869,7 +869,7 @@
     </hop>
     <hop>
       <from>add EAR_ID</from>
-      <to>PROJECT_EARTHQUAKE output csv</to>
+      <to>PROJECT_EARTHQUAKE</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -879,7 +879,7 @@
     </hop>
     <hop>
       <from>Sequence Volcanoes</from>
-      <to>PROJECT_VOLCANOES csv output</to>
+      <to>PROJECT_VOLCANOES</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -889,12 +889,127 @@
     </hop>
     <hop>
       <from>add OPE_ID</from>
-      <to>PROJECT_OPERATOR csv output</to>
+      <to>PROJECT_OPERATOR</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>add pla_id</from>
-      <to>PROJECT_PLANE csv ouput</to>
+      <to>PROJECT_PLANE</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Date to year Crash</from>
+      <to>Select faits</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>add EAR_ID</from>
+      <to>Sort earth</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select faits</from>
+      <to>Sort yea+country</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort yea+country</from>
+      <to>join earth.</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort earth</from>
+      <to>join earth.</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>join earth.</from>
+      <to>Sort year</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge years and y. vol.</from>
+      <to>Sort year 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort year</from>
+      <to>join year</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort year 2</from>
+      <to>join year</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>join year</from>
+      <to>Sort yea+coun</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>add cra_id</from>
+      <to>Sort crash2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort yea+coun</from>
+      <to>Merge join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort crash2</from>
+      <to>Merge join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>add COU_ID</from>
+      <to>Sort cou2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge join</from>
+      <to>Sort cou</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort cou2</from>
+      <to>Merge country</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort cou</from>
+      <to>Merge country</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Merge country</from>
+      <to>Sort volc</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sequence Volcanoes</from>
+      <to>Sort volc 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort volc 2</from>
+      <to>merge volc</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort volc</from>
+      <to>merge volc</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>merge volc</from>
+      <to>Select fait all</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select fait all</from>
+      <to>PROJECT_FAIT</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -909,7 +1024,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>E:/HEG/62-62 Valorisations des données/Billard/BiProject/Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1143,7 +1258,7 @@
     <append>N</append>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>E:/HEG/62-62 Valorisations des données/Billard/BiProject/PROJECT_VOLCANOES.xls</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_VOLCANOES.xls</name>
       <extention>xls</extention>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
       <create_parent_folder>Y</create_parent_folder>
@@ -1276,8 +1391,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
-      <yloc>976</yloc>
+      <xloc>544</xloc>
+      <yloc>880</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1366,7 +1481,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>E:/HEG/62-62 Valorisations des données/Billard/BiProject/PROJECT_CRASH</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_CRASH</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1429,8 +1544,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2144</xloc>
-      <yloc>848</yloc>
+      <xloc>2096</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1577,7 +1692,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>E:/HEG/62-62 Valorisations des données/Billard/BiProject/earthquake_data.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\earthquake_data.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1827,7 +1942,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>E:/HEG/62-62 Valorisations des données/Billard/BiProject/eruptions.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\eruptions.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -2053,7 +2168,7 @@
     </remotesteps>
     <GUI>
       <xloc>64</xloc>
-      <yloc>368</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2136,8 +2251,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2208</xloc>
-      <yloc>992</yloc>
+      <xloc>2240</xloc>
+      <yloc>896</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2158,12 +2273,12 @@
     <keys_1>
       <key>Operator</key>
       <key>Date</key>
-      <key>Location</key>
+      <key>Country</key>
     </keys_1>
     <keys_2>
       <key>OPE_NAME</key>
       <key>Date</key>
-      <key>Location</key>
+      <key>Country</key>
     </keys_2>
     <attributes/>
     <cluster_schema/>
@@ -2174,8 +2289,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1808</xloc>
-      <yloc>736</yloc>
+      <xloc>1760</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2196,12 +2311,12 @@
     <keys_1>
       <key>AC Type</key>
       <key>Date</key>
-      <key>Location</key>
+      <key>Country</key>
     </keys_1>
     <keys_2>
       <key>PLA_TYPE</key>
       <key>Date</key>
-      <key>Location</key>
+      <key>Country</key>
     </keys_2>
     <attributes/>
     <cluster_schema/>
@@ -2212,8 +2327,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1536</xloc>
-      <yloc>736</yloc>
+      <xloc>1504</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2291,7 +2406,7 @@
     <name>Merge years and y. vol.</name>
     <type>MergeRows</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -2318,7 +2433,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1296</xloc>
+      <xloc>1328</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2354,8 +2469,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1040</xloc>
-      <yloc>352</yloc>
+      <xloc>1024</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2395,8 +2510,482 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1808</xloc>
-      <yloc>848</yloc>
+      <xloc>1952</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_COUNTRY csv output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_COUNTRY</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>COU_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>'</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>COU_NAME</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>33</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2032</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_EARTHQUAKE</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_EARTHQUAKE</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>EAR_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>'</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>EAR_NAME</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>64</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1600</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_OPERATOR</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_OPERATOR</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>OPE_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>'</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>OPE_NAME</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>49</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1856</xloc>
+      <yloc>752</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_PLANE</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_PLANE</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1648</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_VOLCANOES</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_VOLCANOES</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>VOL_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group>'</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>VOL_NAME</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>37</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>VOL_CAT</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>20</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>VOL_TYPE</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>19</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2304</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_YEAR ouput csv</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator>;</separator>
+    <enclosure>"</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>windows-1252</encoding>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_YEAR</name>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>csv</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery/>
+    </file>
+    <fields>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1600</xloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2433,7 +3022,7 @@
     </remotesteps>
     <GUI>
       <xloc>1184</xloc>
-      <yloc>352</yloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2490,18 +3079,23 @@
     <fields>
       <field>
         <name>Date</name>
+        <rename/>
       </field>
       <field>
-        <name>Location</name>
+        <name>Country</name>
+        <rename/>
       </field>
       <field>
         <name>Operator</name>
+        <rename/>
       </field>
       <field>
         <name>AC Type</name>
+        <rename/>
       </field>
       <field>
         <name>Fatalities</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2515,7 +3109,7 @@
     </remotesteps>
     <GUI>
       <xloc>1168</xloc>
-      <yloc>736</yloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2594,9 +3188,11 @@
       </field>
       <field>
         <name>Date</name>
+        <rename/>
       </field>
       <field>
-        <name>Location</name>
+        <name>Country</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2610,7 +3206,7 @@
     </remotesteps>
     <GUI>
       <xloc>1152</xloc>
-      <yloc>560</yloc>
+      <yloc>752</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2632,9 +3228,11 @@
       </field>
       <field>
         <name>Date</name>
+        <rename/>
       </field>
       <field>
-        <name>Location</name>
+        <name>Country</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2678,8 +3276,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1504</xloc>
-      <yloc>976</yloc>
+      <xloc>1520</xloc>
+      <yloc>896</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2763,8 +3361,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>432</xloc>
-      <yloc>352</yloc>
+      <xloc>416</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2795,7 +3393,7 @@
     </remotesteps>
     <GUI>
       <xloc>1008</xloc>
-      <yloc>976</yloc>
+      <yloc>880</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2827,7 +3425,7 @@
     </remotesteps>
     <GUI>
       <xloc>1008</xloc>
-      <yloc>848</yloc>
+      <yloc>752</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2881,31 +3479,24 @@
       </field>
       <field>
         <name>magnitude</name>
-        <rename/>
       </field>
       <field>
         <name>cdi</name>
-        <rename/>
       </field>
       <field>
         <name>alert</name>
-        <rename/>
       </field>
       <field>
         <name>tsunami</name>
-        <rename/>
       </field>
       <field>
         <name>continent</name>
-        <rename/>
       </field>
       <field>
         <name>country</name>
-        <rename/>
       </field>
       <field>
         <name>YEAR_NUMBER</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -2918,8 +3509,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
-      <yloc>368</yloc>
+      <xloc>736</xloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3043,7 +3634,6 @@
     <fields>
       <field>
         <name>YEAR_NUMBER</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -3056,8 +3646,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
-      <yloc>352</yloc>
+      <xloc>736</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3087,8 +3677,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1024</xloc>
-      <yloc>480</yloc>
+      <xloc>1008</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3154,7 +3744,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1328</xloc>
+      <xloc>2144</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -3324,7 +3914,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>Location</name>
+        <name>Country</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -3372,7 +3962,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>Location_1</name>
+        <name>Country_1</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -3404,7 +3994,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>Location_2</name>
+        <name>Country_2</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -3429,8 +4019,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1696</xloc>
-      <yloc>848</yloc>
+      <xloc>1808</xloc>
+      <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3472,7 +4062,7 @@
     </remotesteps>
     <GUI>
       <xloc>1280</xloc>
-      <yloc>560</yloc>
+      <yloc>752</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3480,7 +4070,7 @@
     <name>Sort Ope_name 2</name>
     <type>SortRows</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -3513,8 +4103,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1664</xloc>
-      <yloc>736</yloc>
+      <xloc>1632</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3939,8 +4529,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
-      <yloc>480</yloc>
+      <xloc>544</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3997,8 +4587,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
-      <yloc>240</yloc>
+      <xloc>1040</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4179,7 +4769,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1056</xloc>
+      <xloc>1312</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -4264,7 +4854,7 @@
     </remotesteps>
     <GUI>
       <xloc>1296</xloc>
-      <yloc>352</yloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4401,7 +4991,7 @@
     </remotesteps>
     <GUI>
       <xloc>1424</xloc>
-      <yloc>560</yloc>
+      <yloc>752</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4482,7 +5072,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1184</xloc>
+      <xloc>1616</xloc>
       <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
@@ -4508,7 +5098,7 @@
         <case_insensitive>N</case_insensitive>
       </field>
       <field>
-        <name>Location</name>
+        <name>Country</name>
         <case_insensitive>N</case_insensitive>
       </field>
       <field>
@@ -4532,7 +5122,7 @@
         <case_insensitive>N</case_insensitive>
       </field>
       <field>
-        <name>Location_1</name>
+        <name>Country_1</name>
         <case_insensitive>N</case_insensitive>
       </field>
       <field>
@@ -4548,7 +5138,7 @@
         <case_insensitive>N</case_insensitive>
       </field>
       <field>
-        <name>Location_2</name>
+        <name>Country_2</name>
         <case_insensitive>N</case_insensitive>
       </field>
       <field>
@@ -4569,8 +5159,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1936</xloc>
-      <yloc>848</yloc>
+      <xloc>1888</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4585,7 +5175,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>E:/HEG/62-62 Valorisations des données/Billard/BiProject/volcanoes around the world in 2021.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\volcanoes around the world in 2021.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -4740,7 +5330,7 @@
     <name>add COU_ID</name>
     <type>Sequence</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -4775,7 +5365,7 @@
     <name>add EAR_ID</name>
     <type>Sequence</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -4801,8 +5391,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
-      <yloc>240</yloc>
+      <xloc>1376</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4836,8 +5426,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1760</xloc>
-      <yloc>560</yloc>
+      <xloc>1696</xloc>
+      <yloc>752</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4871,8 +5461,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2032</xloc>
-      <yloc>848</yloc>
+      <xloc>1984</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5042,8 +5632,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>352</yloc>
+      <xloc>272</xloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5180,7 +5770,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>Location</name>
+        <name>Country</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -5197,8 +5787,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1280</xloc>
-      <yloc>736</yloc>
+      <xloc>1360</xloc>
+      <yloc>560</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5244,8 +5834,8 @@
     </GUI>
   </step>
   <step>
-    <name>PROJECT_EARTHQUAKE output csv</name>
-    <type>TextFileOutput</type>
+    <name>Select faits</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -5254,129 +5844,133 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>E:\HEG\62-62 Valorisations des données\Billard\BiProject\PROJECT_EARTHQUAKE</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-    </file>
     <fields>
       <field>
-        <name>EAR_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>.</decimal>
-        <group>'</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>0</precision>
+        <name>Date</name>
+        <rename/>
       </field>
       <field>
-        <name>EAR_NAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>64</length>
-        <precision>-1</precision>
+        <name>Time</name>
+        <rename/>
       </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>864</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>PROJECT_YEAR ouput csv</name>
-    <type>TextFileOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>E:\HEG\62-62 Valorisations des données\Billard\BiProject\PROJECT_YEAR</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-    </file>
-    <fields>
+      <field>
+        <name>Location</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Country</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Operator</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Flight #</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Route</name>
+        <rename/>
+      </field>
+      <field>
+        <name>AC Type</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Registration</name>
+        <rename/>
+      </field>
+      <field>
+        <name>cn/ln</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Aboard</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Aboard Passangers</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Aboard Crew</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Fatalities</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Fatalities Passangers</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Fatalities Crew</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Ground</name>
+        <rename/>
+      </field>
+      <field>
+        <name>Summary</name>
+        <rename/>
+      </field>
       <field>
         <name>YEAR_NUMBER</name>
-        <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>0</precision>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort earth</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>country</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
     </fields>
     <attributes/>
@@ -5388,14 +5982,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1456</xloc>
-      <yloc>240</yloc>
+      <xloc>1392</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>PROJECT_VOLCANOES csv output</name>
-    <type>TextFileOutput</type>
+    <name>Sort yea+country</name>
+    <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -5404,86 +5998,67 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>E:\HEG\62-62 Valorisations des données\Billard\BiProject\PROJECT_VOLCANOES</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-    </file>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>VOL_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>.</decimal>
-        <group>'</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>0</precision>
+        <name>Country</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
       <field>
-        <name>VOL_NAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>37</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>VOL_CAT</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>20</length>
-        <precision>-1</precision>
-      </field>
-      <field>
-        <name>VOL_TYPE</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>19</length>
-        <precision>-1</precision>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
     </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1360</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>join earth.</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>Sort yea+country</step1>
+    <step2>Sort earth</step2>
+    <keys_1>
+      <key>Country</key>
+      <key>YEAR_NUMBER</key>
+    </keys_1>
+    <keys_2>
+      <key>country</key>
+      <key>YEAR_NUMBER</key>
+    </keys_2>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -5494,13 +6069,13 @@
     </remotesteps>
     <GUI>
       <xloc>1488</xloc>
-      <yloc>80</yloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>PROJECT_COUNTRY csv output</name>
-    <type>TextFileOutput</type>
+    <name>Sort year</name>
+    <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -5509,60 +6084,275 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>E:\HEG\62-62 Valorisations des données\Billard\BiProject\PROJECT_COUNTRY</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-    </file>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>COU_ID</name>
-        <type>Integer</type>
-        <format>####0;-####0</format>
-        <currency/>
-        <decimal>.</decimal>
-        <group>'</group>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>0</precision>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1568</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort year 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1568</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>join year</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>Sort year</step1>
+    <step2>Sort year 2</step2>
+    <keys_1>
+      <key>YEAR_NUMBER</key>
+    </keys_1>
+    <keys_2>
+      <key>YEAR_NUMBER</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1712</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort yea+coun</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Country</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1824</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort crash2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Country</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1952</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge join</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>Sort yea+coun</step1>
+    <step2>Sort crash2</step2>
+    <keys_1>
+      <key>Country</key>
+      <key>YEAR_NUMBER</key>
+    </keys_1>
+    <keys_2>
+      <key>Country</key>
+      <key>YEAR_NUMBER</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1888</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort cou2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
       <field>
         <name>COU_NAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>33</length>
-        <precision>-1</precision>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
       </field>
     </fields>
     <attributes/>
@@ -5574,13 +6364,285 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2000</xloc>
-      <yloc>160</yloc>
+      <xloc>1920</xloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>PROJECT_OPERATOR csv output</name>
+    <name>Sort cou</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Country</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2048</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge country</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>Sort cou</step1>
+    <step2>Sort cou2</step2>
+    <keys_1>
+      <key>Country</key>
+    </keys_1>
+    <keys_2>
+      <key>COU_NAME</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2048</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort volc</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>COU_NAME</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2160</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort volc 2</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>VOL_COUNTRY</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>VOL_YEAR</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2160</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>merge volc</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>Sort volc</step1>
+    <step2>Sort volc 2</step2>
+    <keys_1>
+      <key>Country</key>
+      <key>YEAR_NUMBER</key>
+    </keys_1>
+    <keys_2>
+      <key>VOL_COUNTRY</key>
+      <key>VOL_YEAR</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2256</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select fait all</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_ID</name>
+        <rename>FAI_VOL_ID</rename>
+      </field>
+      <field>
+        <name>EAR_ID</name>
+        <rename>FAI_EAR_ID</rename>
+      </field>
+      <field>
+        <name>CRA_ID</name>
+        <rename>FAI_CRA_ID</rename>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <rename>FAI_COU_ID</rename>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <rename>FAI_YEA_NUMBER</rename>
+      </field>
+      <field>
+        <name>magnitude</name>
+        <rename>FAI_MAGNITUDE</rename>
+      </field>
+      <field>
+        <name>tsunami</name>
+        <rename>FAI_TSUNAMI</rename>
+      </field>
+      <field>
+        <name>Fatalities</name>
+        <rename>FAI_FATALITIES</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2352</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PROJECT_FAIT</name>
     <type>TextFileOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -5604,7 +6666,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>E:\HEG\62-62 Valorisations des données\Billard\BiProject\PROJECT_OPERATOR</name>
+      <name>C:/Users/Zoe_u/OneDrive/Bureau/HEG/Semestre 6/Billard - Valorisation des données/BiProject/PROJECT_FAIT</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -5622,28 +6684,100 @@
     </file>
     <fields>
       <field>
-        <name>OPE_ID</name>
+        <name>FAI_VOL_ID</name>
         <type>Integer</type>
         <format>####0;-####0</format>
         <currency/>
-        <decimal>.</decimal>
-        <group>'</group>
+        <decimal>,</decimal>
+        <group> </group>
         <nullif/>
         <trim_type>none</trim_type>
         <length>-1</length>
         <precision>0</precision>
       </field>
       <field>
-        <name>OPE_NAME</name>
-        <type>String</type>
+        <name>FAI_EAR_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>FAI_CRA_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>FAI_COU_ID</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>FAI_YEA_NUMBER</name>
+        <type>Integer</type>
         <format/>
         <currency/>
         <decimal/>
         <group/>
         <nullif/>
         <trim_type>none</trim_type>
-        <length>49</length>
-        <precision>-1</precision>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>FAI_MAGNITUDE</name>
+        <type>Number</type>
+        <format>#.#</format>
+        <currency>$</currency>
+        <decimal>.</decimal>
+        <group>,</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>4</length>
+        <precision>2</precision>
+      </field>
+      <field>
+        <name>FAI_TSUNAMI</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>FAI_FATALITIES</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group> </group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
       </field>
     </fields>
     <attributes/>
@@ -5655,65 +6789,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1904</xloc>
-      <yloc>560</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>PROJECT_PLANE csv ouput</name>
-    <type>TextFileOutput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <separator>;</separator>
-    <enclosure>"</enclosure>
-    <enclosure_forced>N</enclosure_forced>
-    <enclosure_fix_disabled>N</enclosure_fix_disabled>
-    <header>Y</header>
-    <footer>N</footer>
-    <format>DOS</format>
-    <compression>None</compression>
-    <encoding>windows-1252</encoding>
-    <endedLine/>
-    <fileNameInField>N</fileNameInField>
-    <fileNameField/>
-    <create_parent_folder>Y</create_parent_folder>
-    <file>
-      <name>E:\HEG\62-62 Valorisations des données\Billard\BiProject\PROJECT_PLANE</name>
-      <servlet_output>N</servlet_output>
-      <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
-      <append>N</append>
-      <split>N</split>
-      <haspartno>N</haspartno>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
-      <add_to_result_filenames>Y</add_to_result_filenames>
-      <pad>N</pad>
-      <fast_dump>N</fast_dump>
-      <splitevery/>
-    </file>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1648</xloc>
-      <yloc>640</yloc>
+      <xloc>2352</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
