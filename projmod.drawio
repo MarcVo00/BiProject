@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="RBBJygDhkUL87WIhaCH2" name="Page-1">
-        <mxGraphModel dx="746" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="986" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -109,7 +109,7 @@
                 <mxCell id="56" value="fai_cou_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="47" vertex="1">
                     <mxGeometry y="104" width="140" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="57" value="fai_yea_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="47" vertex="1">
+                <mxCell id="57" value="fai_year_number&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="47" vertex="1">
                     <mxGeometry y="130" width="140" height="26" as="geometry"/>
                 </mxCell>
                 <mxCell id="58" value="fai_magnitude" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="47" vertex="1">
