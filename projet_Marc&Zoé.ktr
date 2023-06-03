@@ -1060,7 +1060,7 @@
     <hop>
       <from>Add constants</from>
       <to>Sort rows</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Sequence Volcanoes</from>
@@ -1090,32 +1090,32 @@
     <hop>
       <from>merge volc</from>
       <to>Sort rows</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Sort rows</from>
       <to>Filter rows 2</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filter rows 2</from>
       <to>Filter rows 3</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filter rows 3</from>
       <to>Sort rows 4</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filter rows 3</from>
       <to>Sort rows 5</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Select values 5</from>
       <to>PROJECT_FAIT</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Only year of crash 2</from>
@@ -1145,27 +1145,27 @@
     <hop>
       <from>Sort rows 4</from>
       <to>Set field value</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Sort rows 5</from>
       <to>Set field value 2</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Set field value</from>
       <to>Select values 5</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Set field value 2</from>
       <to>Select values 5</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Filter rows 2</from>
       <to>Select values 5</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
   </order>
   <step>
@@ -8350,7 +8350,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>RIGHT OUTER</join_type>
+    <join_type>INNER</join_type>
     <step1>Sort volc 2</step1>
     <step2>Sort volc 3</step2>
     <keys_1>
@@ -8386,7 +8386,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>RIGHT OUTER</join_type>
+    <join_type>INNER</join_type>
     <step1>Add constants 2</step1>
     <step2>Sort volc</step2>
     <keys_1>
@@ -8456,7 +8456,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1856</xloc>
+      <xloc>1904</xloc>
       <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
