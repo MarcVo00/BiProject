@@ -1063,11 +1063,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows</from>
-      <to>Select values 5</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Sequence Volcanoes</from>
       <to>Sort rows 2</to>
       <enabled>Y</enabled>
@@ -1100,22 +1095,22 @@
     <hop>
       <from>Sort rows</from>
       <to>Filter rows 2</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 2</from>
       <to>Filter rows 3</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 3</from>
       <to>Sort rows 4</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 3</from>
       <to>Sort rows 5</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Select values 5</from>
@@ -1145,6 +1140,31 @@
     <hop>
       <from>Sort rows 7</from>
       <to>InnerJoinOpeName</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 4</from>
+      <to>Set field value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 5</from>
+      <to>Set field value 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Set field value</from>
+      <to>Select values 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Set field value 2</from>
+      <to>Select values 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows 2</from>
+      <to>Select values 5</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -2525,7 +2545,7 @@
       <schema_name/>
     </partitioning>
     <send_true_to>Filter rows 3</send_true_to>
-    <send_false_to/>
+    <send_false_to>Select values 5</send_false_to>
     <compare>
       <condition>
         <negated>N</negated>
@@ -3327,8 +3347,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2784</xloc>
-      <yloc>304</yloc>
+      <xloc>2704</xloc>
+      <yloc>656</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5054,8 +5074,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2656</xloc>
-      <yloc>304</yloc>
+      <xloc>2496</xloc>
+      <yloc>656</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8606,6 +8626,68 @@
     <GUI>
       <xloc>1712</xloc>
       <yloc>704</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Set field value</name>
+    <type>SetValueField</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_YEAR</name>
+        <replaceby>CRA_YEAR_NUMBER</replaceby>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2624</xloc>
+      <yloc>576</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Set field value 2</name>
+    <type>SetValueField</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_YEAR</name>
+        <replaceby>EAR_YEAR_NUMBER</replaceby>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2528</xloc>
+      <yloc>576</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
