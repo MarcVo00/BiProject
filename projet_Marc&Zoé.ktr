@@ -1228,6 +1228,18 @@
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
       </field>
+      <field>
+        <name>CRA_COU_ID</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1306,6 +1318,18 @@
       <field>
         <name>EAR_COU_NAME</name>
         <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>EAR_COU_ID</name>
+        <type>Integer</type>
         <format/>
         <currency/>
         <decimal/>
@@ -4779,7 +4803,7 @@
       </field>
       <field>
         <name>COU_ID</name>
-        <rename/>
+        <rename>CRA_COU_ID</rename>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>
@@ -4787,9 +4811,6 @@
       </remove>
       <remove>
         <name>flagfield</name>
-      </remove>
-      <remove>
-        <name>COU_ID</name>
       </remove>
     </fields>
     <attributes/>
@@ -4820,57 +4841,75 @@
     <fields>
       <field>
         <name>title</name>
+        <rename/>
       </field>
       <field>
         <name>magnitude</name>
+        <rename/>
       </field>
       <field>
         <name>date_time</name>
+        <rename/>
       </field>
       <field>
         <name>cdi</name>
+        <rename/>
       </field>
       <field>
         <name>mmi</name>
+        <rename/>
       </field>
       <field>
         <name>alert</name>
+        <rename/>
       </field>
       <field>
         <name>tsunami</name>
+        <rename/>
       </field>
       <field>
         <name>sig</name>
+        <rename/>
       </field>
       <field>
         <name>net</name>
+        <rename/>
       </field>
       <field>
         <name>nst</name>
+        <rename/>
       </field>
       <field>
         <name>dmin</name>
+        <rename/>
       </field>
       <field>
         <name>gap</name>
+        <rename/>
       </field>
       <field>
         <name>magType</name>
+        <rename/>
       </field>
       <field>
         <name>depth</name>
+        <rename/>
       </field>
       <field>
         <name>latitude</name>
+        <rename/>
       </field>
       <field>
         <name>longitude</name>
+        <rename/>
       </field>
       <field>
         <name>continent</name>
+        <rename/>
       </field>
       <field>
         <name>country</name>
+        <rename/>
       </field>
       <field>
         <name>YEAR_NUMBER</name>
@@ -4878,36 +4917,47 @@
       </field>
       <field>
         <name>YEAR_NUMBER_1</name>
+        <rename/>
       </field>
       <field>
         <name>flagfield</name>
+        <rename/>
       </field>
       <field>
         <name>EAR_NAME</name>
+        <rename/>
       </field>
       <field>
         <name>magnitude_1</name>
+        <rename/>
       </field>
       <field>
         <name>cdi_1</name>
+        <rename/>
       </field>
       <field>
         <name>alert_1</name>
+        <rename/>
       </field>
       <field>
         <name>tsunami_1</name>
+        <rename/>
       </field>
       <field>
         <name>continent_1</name>
+        <rename/>
       </field>
       <field>
         <name>country_1</name>
+        <rename/>
       </field>
       <field>
         <name>YEAR_NUMBER_2</name>
+        <rename/>
       </field>
       <field>
         <name>EAR_ID</name>
+        <rename/>
       </field>
       <field>
         <name>COU_NAME</name>
@@ -4915,9 +4965,11 @@
       </field>
       <field>
         <name>flagfield_1</name>
+        <rename/>
       </field>
       <field>
         <name>COU_ID</name>
+        <rename>EAR_COU_ID</rename>
       </field>
       <select_unspecified>N</select_unspecified>
       <remove>
@@ -5000,9 +5052,6 @@
       </remove>
       <remove>
         <name>flagfield_1</name>
-      </remove>
-      <remove>
-        <name>COU_ID</name>
       </remove>
     </fields>
     <attributes/>
@@ -8645,6 +8694,10 @@
         <name>VOL_YEAR</name>
         <replaceby>CRA_YEAR_NUMBER</replaceby>
       </field>
+      <field>
+        <name>COU_ID</name>
+        <replaceby>CRA_COU_ID</replaceby>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -8675,6 +8728,10 @@
       <field>
         <name>VOL_YEAR</name>
         <replaceby>EAR_YEAR_NUMBER</replaceby>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <replaceby>EAR_COU_ID</replaceby>
       </field>
     </fields>
     <attributes/>
