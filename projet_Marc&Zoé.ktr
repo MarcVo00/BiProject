@@ -5877,7 +5877,7 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>Country</name>
@@ -6289,7 +6289,7 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>YEAR_NUMBER</name>
@@ -7007,7 +7007,7 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>VOL_COUNTRY</name>
@@ -7057,7 +7057,7 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>EAR_COU_NAME</name>
@@ -8428,7 +8428,7 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>country</name>
