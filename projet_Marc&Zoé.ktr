@@ -1003,11 +1003,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>merge ear/volc</from>
-      <to>Add constants</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Merge join</from>
       <to>Select values</to>
       <enabled>Y</enabled>
@@ -1060,7 +1055,7 @@
     <hop>
       <from>Add constants</from>
       <to>Sort rows</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Sequence Volcanoes</from>
@@ -1088,34 +1083,29 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>merge volc</from>
-      <to>Sort rows</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
       <from>Sort rows</from>
       <to>Filter rows 2</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 2</from>
       <to>Filter rows 3</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 3</from>
       <to>Sort rows 4</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 3</from>
       <to>Sort rows 5</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Select values 5</from>
       <to>PROJECT_FAIT</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Only year of crash 2</from>
@@ -1145,27 +1135,52 @@
     <hop>
       <from>Sort rows 4</from>
       <to>Set field value</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Sort rows 5</from>
       <to>Set field value 2</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Set field value</from>
       <to>Select values 5</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Set field value 2</from>
       <to>Select values 5</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Filter rows 2</from>
       <to>Select values 5</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Unique rows</from>
+      <to>Add constants</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>merge ear/volc</from>
+      <to>Sort rows 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 8</from>
+      <to>Unique rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>merge volc</from>
+      <to>Sort rows 9</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 9</from>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
     </hop>
   </order>
   <step>
@@ -5919,7 +5934,7 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>N</unique_rows>
+    <unique_rows>Y</unique_rows>
     <fields>
       <field>
         <name>COU_NAME</name>
@@ -6960,7 +6975,7 @@
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>CRA_COU_NAME</name>
+        <name>CRA_YEAR_NUMBER</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -6968,7 +6983,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>CRA_YEAR_NUMBER</name>
+        <name>CRA_COU_ID</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -6985,8 +7000,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2208</xloc>
-      <yloc>336</yloc>
+      <xloc>2160</xloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7010,7 +7025,7 @@
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>VOL_COUNTRY</name>
+        <name>VOL_YEAR</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -7018,7 +7033,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>VOL_YEAR</name>
+        <name>COU_ID</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -7035,8 +7050,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2256</xloc>
-      <yloc>144</yloc>
+      <xloc>2240</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7060,7 +7075,7 @@
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>EAR_COU_NAME</name>
+        <name>EAR_YEAR_NUMBER</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -7068,7 +7083,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>EAR_YEAR_NUMBER</name>
+        <name>EAR_COU_ID</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -7085,8 +7100,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2192</xloc>
-      <yloc>240</yloc>
+      <xloc>2224</xloc>
+      <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8350,16 +8365,16 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>INNER</join_type>
+    <join_type>RIGHT OUTER</join_type>
     <step1>Sort volc 2</step1>
     <step2>Sort volc 3</step2>
     <keys_1>
-      <key>VOL_COUNTRY</key>
       <key>VOL_YEAR</key>
+      <key>COU_ID</key>
     </keys_1>
     <keys_2>
-      <key>EAR_COU_NAME</key>
       <key>EAR_YEAR_NUMBER</key>
+      <key>EAR_COU_ID</key>
     </keys_2>
     <attributes/>
     <cluster_schema/>
@@ -8386,16 +8401,16 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <join_type>INNER</join_type>
+    <join_type>RIGHT OUTER</join_type>
     <step1>Add constants 2</step1>
     <step2>Sort volc</step2>
     <keys_1>
-      <key>VOL_COUNTRY</key>
       <key>VOL_YEAR</key>
+      <key>COU_ID</key>
     </keys_1>
     <keys_2>
-      <key>CRA_COU_NAME</key>
       <key>CRA_YEAR_NUMBER</key>
+      <key>CRA_COU_ID</key>
     </keys_2>
     <attributes/>
     <cluster_schema/>
@@ -8406,8 +8421,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2320</xloc>
-      <yloc>320</yloc>
+      <xloc>2272</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8745,6 +8760,125 @@
     <GUI>
       <xloc>2528</xloc>
       <yloc>576</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Unique rows</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>EAR_ID</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2448</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 8</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>EAR_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2336</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 9</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>Y</unique_rows>
+    <fields>
+      <field>
+        <name>CRA_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2352</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
