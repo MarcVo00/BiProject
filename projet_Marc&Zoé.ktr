@@ -1184,93 +1184,6 @@
     </hop>
   </order>
   <step>
-    <name>Add constants crash</name>
-    <type>Constant</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>Fatalities</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>$</currency>
-        <decimal>,</decimal>
-        <group/>
-        <nullif/>
-        <length>15</length>
-        <precision>0</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>CRA_YEAR_NUMBER</name>
-        <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>CRA_ID</name>
-        <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>CRA_COU_NAME</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>CRA_COU_ID</name>
-        <type>Integer</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2448</xloc>
-      <yloc>208</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Add constants 2</name>
     <type>Constant</type>
     <description/>
@@ -1370,6 +1283,93 @@
     </GUI>
   </step>
   <step>
+    <name>Add constants crash</name>
+    <type>Constant</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>Fatalities</name>
+        <type>Integer</type>
+        <format>#</format>
+        <currency>$</currency>
+        <decimal>,</decimal>
+        <group/>
+        <nullif/>
+        <length>15</length>
+        <precision>0</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>CRA_YEAR_NUMBER</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>CRA_ID</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>CRA_COU_NAME</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>CRA_COU_ID</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2448</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Airplane Crash 2</name>
     <type>CsvInput</type>
     <description/>
@@ -1380,7 +1380,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv</filename>
+    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1614,7 +1614,7 @@
     <append>N</append>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_VOLCANOES</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_VOLCANOES</name>
       <extention>xls</extention>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
       <create_parent_folder>Y</create_parent_folder>
@@ -1837,7 +1837,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_CRASH</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_CRASH</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -2048,7 +2048,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\earthquake_data.csv</filename>
+    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\earthquake_data.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -2298,7 +2298,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\eruptions.csv</filename>
+    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\eruptions.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -2529,6 +2529,41 @@
     </GUI>
   </step>
   <step>
+    <name>Filter ear_year</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Sort cra_year</send_true_to>
+    <send_false_to>Sort ear_year</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>EAR_YEAR_NUMBER</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2448</xloc>
+      <yloc>640</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Filter start year</name>
     <type>FilterRows</type>
     <description/>
@@ -2603,41 +2638,6 @@
     </remotesteps>
     <GUI>
       <xloc>2304</xloc>
-      <yloc>640</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Filter ear_year</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <send_true_to>Sort cra_year</send_true_to>
-    <send_false_to>Sort ear_year</send_false_to>
-    <compare>
-      <condition>
-        <negated>N</negated>
-        <leftvalue>EAR_YEAR_NUMBER</leftvalue>
-        <function>IS NULL</function>
-        <rightvalue/>
-      </condition>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2448</xloc>
       <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2790,6 +2790,40 @@
     </GUI>
   </step>
   <step>
+    <name>Merge cou_name</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step1>Sort vol_country</step1>
+    <step2>Sort cou_name</step2>
+    <keys_1>
+      <key>VOL_COUNTRY</key>
+    </keys_1>
+    <keys_2>
+      <key>COU_NAME</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2048</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Merge countries + country vol</name>
     <type>MergeRows</type>
     <description/>
@@ -2892,40 +2926,6 @@
     <GUI>
       <xloc>1888</xloc>
       <yloc>448</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Merge cou_name</name>
-    <type>MergeJoin</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <join_type>INNER</join_type>
-    <step1>Sort vol_country</step1>
-    <step2>Sort cou_name</step2>
-    <keys_1>
-      <key>VOL_COUNTRY</key>
-    </keys_1>
-    <keys_2>
-      <key>COU_NAME</key>
-    </keys_2>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2048</xloc>
-      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3101,7 +3101,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_COUNTRY</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_COUNTRY</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3153,7 +3153,7 @@
     </remotesteps>
     <GUI>
       <xloc>2032</xloc>
-      <yloc>176</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3182,7 +3182,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_EARTHQUAKE</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_EARTHQUAKE</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3263,7 +3263,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_FAIT</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_FAIT</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3416,7 +3416,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_OPERATOR</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_OPERATOR</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3497,7 +3497,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_PLANE</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_PLANE</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3578,7 +3578,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_VOLCANOES</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_VOLCANOES</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3653,8 +3653,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2304</xloc>
-      <yloc>48</yloc>
+      <xloc>2288</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3683,7 +3683,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_YEAR</name>
+      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_YEAR</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3839,6 +3839,226 @@
     <GUI>
       <xloc>192</xloc>
       <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select Airplane Crash</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>Date</name>
+      </field>
+      <field>
+        <name>Time</name>
+      </field>
+      <field>
+        <name>Location</name>
+      </field>
+      <field>
+        <name>Country</name>
+      </field>
+      <field>
+        <name>Operator</name>
+      </field>
+      <field>
+        <name>Flight #</name>
+      </field>
+      <field>
+        <name>Route</name>
+      </field>
+      <field>
+        <name>AC Type</name>
+      </field>
+      <field>
+        <name>Registration</name>
+      </field>
+      <field>
+        <name>cn/ln</name>
+      </field>
+      <field>
+        <name>Aboard</name>
+      </field>
+      <field>
+        <name>Aboard Passangers</name>
+      </field>
+      <field>
+        <name>Aboard Crew</name>
+      </field>
+      <field>
+        <name>Fatalities</name>
+      </field>
+      <field>
+        <name>Fatalities Passangers</name>
+      </field>
+      <field>
+        <name>Fatalities Crew</name>
+      </field>
+      <field>
+        <name>Ground</name>
+      </field>
+      <field>
+        <name>Summary</name>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+      </field>
+      <field>
+        <name>YEAR_NUMBER_1</name>
+      </field>
+      <field>
+        <name>flagfield</name>
+      </field>
+      <field>
+        <name>Date_1</name>
+      </field>
+      <field>
+        <name>Country_1</name>
+      </field>
+      <field>
+        <name>Operator_1</name>
+      </field>
+      <field>
+        <name>AC Type_1</name>
+      </field>
+      <field>
+        <name>Fatalities_1</name>
+      </field>
+      <field>
+        <name>PLA_TYPE</name>
+      </field>
+      <field>
+        <name>Date_1_1</name>
+      </field>
+      <field>
+        <name>PLA_ID</name>
+      </field>
+      <field>
+        <name>OPE_NAME</name>
+      </field>
+      <field>
+        <name>Date_2</name>
+      </field>
+      <field>
+        <name>OPE_ID</name>
+      </field>
+      <field>
+        <name>YEAR_NUMBER_2</name>
+      </field>
+      <field>
+        <name>CRA_ID</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>Date</name>
+      </remove>
+      <remove>
+        <name>Time</name>
+      </remove>
+      <remove>
+        <name>Location</name>
+      </remove>
+      <remove>
+        <name>Operator</name>
+      </remove>
+      <remove>
+        <name>Flight #</name>
+      </remove>
+      <remove>
+        <name>Route</name>
+      </remove>
+      <remove>
+        <name>AC Type</name>
+      </remove>
+      <remove>
+        <name>Registration</name>
+      </remove>
+      <remove>
+        <name>cn/ln</name>
+      </remove>
+      <remove>
+        <name>Aboard</name>
+      </remove>
+      <remove>
+        <name>Aboard Passangers</name>
+      </remove>
+      <remove>
+        <name>Aboard Crew</name>
+      </remove>
+      <remove>
+        <name>Fatalities Passangers</name>
+      </remove>
+      <remove>
+        <name>Fatalities Crew</name>
+      </remove>
+      <remove>
+        <name>Ground</name>
+      </remove>
+      <remove>
+        <name>Summary</name>
+      </remove>
+      <remove>
+        <name>YEAR_NUMBER_1</name>
+      </remove>
+      <remove>
+        <name>flagfield</name>
+      </remove>
+      <remove>
+        <name>Date_1</name>
+      </remove>
+      <remove>
+        <name>Country_1</name>
+      </remove>
+      <remove>
+        <name>Operator_1</name>
+      </remove>
+      <remove>
+        <name>AC Type_1</name>
+      </remove>
+      <remove>
+        <name>Fatalities_1</name>
+      </remove>
+      <remove>
+        <name>PLA_TYPE</name>
+      </remove>
+      <remove>
+        <name>Date_1_1</name>
+      </remove>
+      <remove>
+        <name>PLA_ID</name>
+      </remove>
+      <remove>
+        <name>OPE_NAME</name>
+      </remove>
+      <remove>
+        <name>Date_2</name>
+      </remove>
+      <remove>
+        <name>OPE_ID</name>
+      </remove>
+      <remove>
+        <name>YEAR_NUMBER_2</name>
+      </remove>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1984</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4171,6 +4391,124 @@
     </GUI>
   </step>
   <step>
+    <name>Select all values for fait</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_ID</name>
+        <rename>FAI_VOL_ID</rename>
+      </field>
+      <field>
+        <name>EAR_ID</name>
+        <rename>FAI_EAR_ID</rename>
+      </field>
+      <field>
+        <name>CRA_ID</name>
+        <rename>FAI_CRA_ID</rename>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <rename>FAI_COU_ID</rename>
+      </field>
+      <field>
+        <name>VOL_YEAR</name>
+        <rename>FAI_YEA_NUMBER</rename>
+      </field>
+      <field>
+        <name>magnitude</name>
+        <rename>FAI_MAGNITUDE</rename>
+      </field>
+      <field>
+        <name>tsunami</name>
+        <rename>FAI_TSUNAMI</rename>
+      </field>
+      <field>
+        <name>Fatalities</name>
+        <rename>FAI_FATALITIES</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2368</xloc>
+      <yloc>896</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select countries</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>Country</name>
+      </field>
+      <field>
+        <name>Fatalities</name>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <rename>CRA_YEAR_NUMBER</rename>
+      </field>
+      <field>
+        <name>CRA_ID</name>
+      </field>
+      <field>
+        <name>COU_NAME</name>
+        <rename>CRA_COU_NAME</rename>
+      </field>
+      <field>
+        <name>flagfield</name>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <rename>CRA_COU_ID</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>Country</name>
+      </remove>
+      <remove>
+        <name>flagfield</name>
+      </remove>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2128</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Select countries crash &amp; earth.</name>
     <type>SelectValues</type>
     <description/>
@@ -4262,6 +4600,217 @@
     <GUI>
       <xloc>1280</xloc>
       <yloc>192</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select earth.</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>title</name>
+      </field>
+      <field>
+        <name>magnitude</name>
+      </field>
+      <field>
+        <name>date_time</name>
+      </field>
+      <field>
+        <name>cdi</name>
+      </field>
+      <field>
+        <name>mmi</name>
+      </field>
+      <field>
+        <name>alert</name>
+      </field>
+      <field>
+        <name>tsunami</name>
+      </field>
+      <field>
+        <name>sig</name>
+      </field>
+      <field>
+        <name>net</name>
+      </field>
+      <field>
+        <name>nst</name>
+      </field>
+      <field>
+        <name>dmin</name>
+      </field>
+      <field>
+        <name>gap</name>
+      </field>
+      <field>
+        <name>magType</name>
+      </field>
+      <field>
+        <name>depth</name>
+      </field>
+      <field>
+        <name>latitude</name>
+      </field>
+      <field>
+        <name>longitude</name>
+      </field>
+      <field>
+        <name>continent</name>
+      </field>
+      <field>
+        <name>country</name>
+      </field>
+      <field>
+        <name>YEAR_NUMBER</name>
+        <rename>EAR_YEAR_NUMBER</rename>
+      </field>
+      <field>
+        <name>YEAR_NUMBER_1</name>
+      </field>
+      <field>
+        <name>flagfield</name>
+      </field>
+      <field>
+        <name>EAR_NAME</name>
+      </field>
+      <field>
+        <name>magnitude_1</name>
+      </field>
+      <field>
+        <name>cdi_1</name>
+      </field>
+      <field>
+        <name>alert_1</name>
+      </field>
+      <field>
+        <name>tsunami_1</name>
+      </field>
+      <field>
+        <name>continent_1</name>
+      </field>
+      <field>
+        <name>country_1</name>
+      </field>
+      <field>
+        <name>YEAR_NUMBER_2</name>
+      </field>
+      <field>
+        <name>EAR_ID</name>
+      </field>
+      <field>
+        <name>COU_NAME</name>
+        <rename>EAR_COU_NAME</rename>
+      </field>
+      <field>
+        <name>flagfield_1</name>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <rename>EAR_COU_ID</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <remove>
+        <name>title</name>
+      </remove>
+      <remove>
+        <name>date_time</name>
+      </remove>
+      <remove>
+        <name>cdi</name>
+      </remove>
+      <remove>
+        <name>mmi</name>
+      </remove>
+      <remove>
+        <name>alert</name>
+      </remove>
+      <remove>
+        <name>sig</name>
+      </remove>
+      <remove>
+        <name>net</name>
+      </remove>
+      <remove>
+        <name>nst</name>
+      </remove>
+      <remove>
+        <name>dmin</name>
+      </remove>
+      <remove>
+        <name>gap</name>
+      </remove>
+      <remove>
+        <name>magType</name>
+      </remove>
+      <remove>
+        <name>depth</name>
+      </remove>
+      <remove>
+        <name>latitude</name>
+      </remove>
+      <remove>
+        <name>longitude</name>
+      </remove>
+      <remove>
+        <name>continent</name>
+      </remove>
+      <remove>
+        <name>country</name>
+      </remove>
+      <remove>
+        <name>YEAR_NUMBER_1</name>
+      </remove>
+      <remove>
+        <name>flagfield</name>
+      </remove>
+      <remove>
+        <name>EAR_NAME</name>
+      </remove>
+      <remove>
+        <name>magnitude_1</name>
+      </remove>
+      <remove>
+        <name>cdi_1</name>
+      </remove>
+      <remove>
+        <name>alert_1</name>
+      </remove>
+      <remove>
+        <name>tsunami_1</name>
+      </remove>
+      <remove>
+        <name>continent_1</name>
+      </remove>
+      <remove>
+        <name>country_1</name>
+      </remove>
+      <remove>
+        <name>YEAR_NUMBER_2</name>
+      </remove>
+      <remove>
+        <name>flagfield_1</name>
+      </remove>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2144</xloc>
+      <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4506,623 +5055,6 @@
     </GUI>
   </step>
   <step>
-    <name>Select Airplane Crash</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>Date</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Time</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Location</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Country</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Operator</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Flight #</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Route</name>
-        <rename/>
-      </field>
-      <field>
-        <name>AC Type</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Registration</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cn/ln</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Aboard</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Aboard Passangers</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Aboard Crew</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Fatalities</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Fatalities Passangers</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Fatalities Crew</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Ground</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Summary</name>
-        <rename/>
-      </field>
-      <field>
-        <name>YEAR_NUMBER</name>
-        <rename/>
-      </field>
-      <field>
-        <name>YEAR_NUMBER_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>flagfield</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Date_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Country_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Operator_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>AC Type_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Fatalities_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>PLA_TYPE</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Date_1_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>PLA_ID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>OPE_NAME</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Date_2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>OPE_ID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>YEAR_NUMBER_2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>CRA_ID</name>
-        <rename/>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>Date</name>
-      </remove>
-      <remove>
-        <name>Time</name>
-      </remove>
-      <remove>
-        <name>Location</name>
-      </remove>
-      <remove>
-        <name>Operator</name>
-      </remove>
-      <remove>
-        <name>Flight #</name>
-      </remove>
-      <remove>
-        <name>Route</name>
-      </remove>
-      <remove>
-        <name>AC Type</name>
-      </remove>
-      <remove>
-        <name>Registration</name>
-      </remove>
-      <remove>
-        <name>cn/ln</name>
-      </remove>
-      <remove>
-        <name>Aboard</name>
-      </remove>
-      <remove>
-        <name>Aboard Passangers</name>
-      </remove>
-      <remove>
-        <name>Aboard Crew</name>
-      </remove>
-      <remove>
-        <name>Fatalities Passangers</name>
-      </remove>
-      <remove>
-        <name>Fatalities Crew</name>
-      </remove>
-      <remove>
-        <name>Ground</name>
-      </remove>
-      <remove>
-        <name>Summary</name>
-      </remove>
-      <remove>
-        <name>YEAR_NUMBER_1</name>
-      </remove>
-      <remove>
-        <name>flagfield</name>
-      </remove>
-      <remove>
-        <name>Date_1</name>
-      </remove>
-      <remove>
-        <name>Country_1</name>
-      </remove>
-      <remove>
-        <name>Operator_1</name>
-      </remove>
-      <remove>
-        <name>AC Type_1</name>
-      </remove>
-      <remove>
-        <name>Fatalities_1</name>
-      </remove>
-      <remove>
-        <name>PLA_TYPE</name>
-      </remove>
-      <remove>
-        <name>Date_1_1</name>
-      </remove>
-      <remove>
-        <name>PLA_ID</name>
-      </remove>
-      <remove>
-        <name>OPE_NAME</name>
-      </remove>
-      <remove>
-        <name>Date_2</name>
-      </remove>
-      <remove>
-        <name>OPE_ID</name>
-      </remove>
-      <remove>
-        <name>YEAR_NUMBER_2</name>
-      </remove>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1984</xloc>
-      <yloc>432</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select countries</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>Country</name>
-        <rename/>
-      </field>
-      <field>
-        <name>Fatalities</name>
-        <rename/>
-      </field>
-      <field>
-        <name>YEAR_NUMBER</name>
-        <rename>CRA_YEAR_NUMBER</rename>
-      </field>
-      <field>
-        <name>CRA_ID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COU_NAME</name>
-        <rename>CRA_COU_NAME</rename>
-      </field>
-      <field>
-        <name>flagfield</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COU_ID</name>
-        <rename>CRA_COU_ID</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>Country</name>
-      </remove>
-      <remove>
-        <name>flagfield</name>
-      </remove>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2128</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select earth.</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>title</name>
-        <rename/>
-      </field>
-      <field>
-        <name>magnitude</name>
-        <rename/>
-      </field>
-      <field>
-        <name>date_time</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cdi</name>
-        <rename/>
-      </field>
-      <field>
-        <name>mmi</name>
-        <rename/>
-      </field>
-      <field>
-        <name>alert</name>
-        <rename/>
-      </field>
-      <field>
-        <name>tsunami</name>
-        <rename/>
-      </field>
-      <field>
-        <name>sig</name>
-        <rename/>
-      </field>
-      <field>
-        <name>net</name>
-        <rename/>
-      </field>
-      <field>
-        <name>nst</name>
-        <rename/>
-      </field>
-      <field>
-        <name>dmin</name>
-        <rename/>
-      </field>
-      <field>
-        <name>gap</name>
-        <rename/>
-      </field>
-      <field>
-        <name>magType</name>
-        <rename/>
-      </field>
-      <field>
-        <name>depth</name>
-        <rename/>
-      </field>
-      <field>
-        <name>latitude</name>
-        <rename/>
-      </field>
-      <field>
-        <name>longitude</name>
-        <rename/>
-      </field>
-      <field>
-        <name>continent</name>
-        <rename/>
-      </field>
-      <field>
-        <name>country</name>
-        <rename/>
-      </field>
-      <field>
-        <name>YEAR_NUMBER</name>
-        <rename>EAR_YEAR_NUMBER</rename>
-      </field>
-      <field>
-        <name>YEAR_NUMBER_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>flagfield</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EAR_NAME</name>
-        <rename/>
-      </field>
-      <field>
-        <name>magnitude_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>cdi_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>alert_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>tsunami_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>continent_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>country_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>YEAR_NUMBER_2</name>
-        <rename/>
-      </field>
-      <field>
-        <name>EAR_ID</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COU_NAME</name>
-        <rename>EAR_COU_NAME</rename>
-      </field>
-      <field>
-        <name>flagfield_1</name>
-        <rename/>
-      </field>
-      <field>
-        <name>COU_ID</name>
-        <rename>EAR_COU_ID</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-      <remove>
-        <name>title</name>
-      </remove>
-      <remove>
-        <name>date_time</name>
-      </remove>
-      <remove>
-        <name>cdi</name>
-      </remove>
-      <remove>
-        <name>mmi</name>
-      </remove>
-      <remove>
-        <name>alert</name>
-      </remove>
-      <remove>
-        <name>sig</name>
-      </remove>
-      <remove>
-        <name>net</name>
-      </remove>
-      <remove>
-        <name>nst</name>
-      </remove>
-      <remove>
-        <name>dmin</name>
-      </remove>
-      <remove>
-        <name>gap</name>
-      </remove>
-      <remove>
-        <name>magType</name>
-      </remove>
-      <remove>
-        <name>depth</name>
-      </remove>
-      <remove>
-        <name>latitude</name>
-      </remove>
-      <remove>
-        <name>longitude</name>
-      </remove>
-      <remove>
-        <name>continent</name>
-      </remove>
-      <remove>
-        <name>country</name>
-      </remove>
-      <remove>
-        <name>YEAR_NUMBER_1</name>
-      </remove>
-      <remove>
-        <name>flagfield</name>
-      </remove>
-      <remove>
-        <name>EAR_NAME</name>
-      </remove>
-      <remove>
-        <name>magnitude_1</name>
-      </remove>
-      <remove>
-        <name>cdi_1</name>
-      </remove>
-      <remove>
-        <name>alert_1</name>
-      </remove>
-      <remove>
-        <name>tsunami_1</name>
-      </remove>
-      <remove>
-        <name>continent_1</name>
-      </remove>
-      <remove>
-        <name>country_1</name>
-      </remove>
-      <remove>
-        <name>YEAR_NUMBER_2</name>
-      </remove>
-      <remove>
-        <name>flagfield_1</name>
-      </remove>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2144</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select all values for fait</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>VOL_ID</name>
-        <rename>FAI_VOL_ID</rename>
-      </field>
-      <field>
-        <name>EAR_ID</name>
-        <rename>FAI_EAR_ID</rename>
-      </field>
-      <field>
-        <name>CRA_ID</name>
-        <rename>FAI_CRA_ID</rename>
-      </field>
-      <field>
-        <name>COU_ID</name>
-        <rename>FAI_COU_ID</rename>
-      </field>
-      <field>
-        <name>VOL_YEAR</name>
-        <rename>FAI_YEA_NUMBER</rename>
-      </field>
-      <field>
-        <name>magnitude</name>
-        <rename>FAI_MAGNITUDE</rename>
-      </field>
-      <field>
-        <name>tsunami</name>
-        <rename>FAI_TSUNAMI</rename>
-      </field>
-      <field>
-        <name>Fatalities</name>
-        <rename>FAI_FATALITIES</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2368</xloc>
-      <yloc>896</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Select volcano</name>
     <type>SelectValues</type>
     <description/>
@@ -5189,28 +5121,16 @@
         <rename>VOL_CAT</rename>
       </field>
       <field>
-        <name>start_year</name>
-        <rename>VOL_YEAR</rename>
-      </field>
-      <field>
-        <name>Region</name>
-        <rename>VOL_REGION</rename>
-      </field>
-      <field>
         <name>Country</name>
         <rename>VOL_COUNTRY</rename>
-      </field>
-      <field>
-        <name>Location</name>
-        <rename>VOL_LOCATION</rename>
       </field>
       <field>
         <name>Type</name>
         <rename>VOL_TYPE</rename>
       </field>
       <field>
-        <name>Status</name>
-        <rename>VOL_STATUS</rename>
+        <name>start_year</name>
+        <rename>VOL_YEAR</rename>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -5389,41 +5309,6 @@
     </GUI>
   </step>
   <step>
-    <name>Set vol_year&amp;cou_id-cra</name>
-    <type>SetValueField</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>VOL_YEAR</name>
-        <replaceby>CRA_YEAR_NUMBER</replaceby>
-      </field>
-      <field>
-        <name>COU_ID</name>
-        <replaceby>CRA_COU_ID</replaceby>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2544</xloc>
-      <yloc>832</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Set vol_year&amp;cou_id - ear</name>
     <type>SetValueField</type>
     <description/>
@@ -5455,6 +5340,41 @@
     <GUI>
       <xloc>2432</xloc>
       <yloc>784</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Set vol_year&amp;cou_id-cra</name>
+    <type>SetValueField</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_YEAR</name>
+        <replaceby>CRA_YEAR_NUMBER</replaceby>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <replaceby>CRA_COU_ID</replaceby>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>832</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6009,6 +5929,48 @@
     </GUI>
   </step>
   <step>
+    <name>Sort cou_name</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>Y</unique_rows>
+    <fields>
+      <field>
+        <name>COU_NAME</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1936</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Sort country 2</name>
     <type>SortRows</type>
     <description/>
@@ -6287,6 +6249,90 @@
     </GUI>
   </step>
   <step>
+    <name>Sort cra_year</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>CRA_YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>720</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort crash id</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>Y</unique_rows>
+    <fields>
+      <field>
+        <name>CRA_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2352</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Sort crash2</name>
     <type>SortRows</type>
     <description/>
@@ -6383,6 +6429,90 @@
     <GUI>
       <xloc>1664</xloc>
       <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort ear_id</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>EAR_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2336</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort ear_year</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>EAR_YEAR_NUMBER</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2400</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6593,48 +6723,6 @@
     </GUI>
   </step>
   <step>
-    <name>Sort pla_type</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>PLA_TYPE</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1264</xloc>
-      <yloc>704</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Sort everything</name>
     <type>SortRows</type>
     <description/>
@@ -6670,31 +6758,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>VOL_YEAR</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_REGION</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
         <name>VOL_COUNTRY</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_LOCATION</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -6710,7 +6774,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>VOL_STATUS</name>
+        <name>VOL_YEAR</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -6719,6 +6783,30 @@
       </field>
       <field>
         <name>VOL_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>COU_NAME</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>flagfield</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>COU_ID</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -6766,6 +6854,14 @@
         <presorted>N</presorted>
       </field>
       <field>
+        <name>EAR_COU_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
         <name>Fatalities</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
@@ -6798,23 +6894,7 @@
         <presorted>N</presorted>
       </field>
       <field>
-        <name>COU_NAME</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>flagfield</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>COU_ID</name>
+        <name>CRA_COU_ID</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -6837,175 +6917,7 @@
     </GUI>
   </step>
   <step>
-    <name>Sort vol_country</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>VOL_COUNTRY</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1936</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort cou_name</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>Y</unique_rows>
-    <fields>
-      <field>
-        <name>COU_NAME</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1936</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort cra_year</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>CRA_YEAR_NUMBER</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2544</xloc>
-      <yloc>720</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort ear_year</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>EAR_YEAR_NUMBER</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2400</xloc>
-      <yloc>720</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort type</name>
+    <name>Sort pla_type</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -7041,8 +6953,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1504</xloc>
-      <yloc>688</yloc>
+      <xloc>1264</xloc>
+      <yloc>704</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7089,7 +7001,7 @@
     </GUI>
   </step>
   <step>
-    <name>Sort ear_id</name>
+    <name>Sort type</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -7108,7 +7020,7 @@
     <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>EAR_ID</name>
+        <name>PLA_TYPE</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -7125,16 +7037,16 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2336</xloc>
-      <yloc>160</yloc>
+      <xloc>1504</xloc>
+      <yloc>688</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort crash id</name>
+    <name>Sort vol_country</name>
     <type>SortRows</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -7147,10 +7059,10 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
-        <name>CRA_ID</name>
+        <name>VOL_COUNTRY</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
@@ -7167,8 +7079,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2352</xloc>
-      <yloc>384</yloc>
+      <xloc>1936</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7339,38 +7251,14 @@
     <free_memory/>
     <compress>N</compress>
     <compress_variable/>
-    <unique_rows>Y</unique_rows>
+    <unique_rows>N</unique_rows>
     <fields>
       <field>
         <name>VOL_NAME</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_CAT</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_YEAR</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_REGION</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
+        <collator_strength>0</collator_strength>
         <presorted>N</presorted>
       </field>
       <field>
@@ -7378,31 +7266,15 @@
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
+        <collator_strength>0</collator_strength>
         <presorted>N</presorted>
       </field>
       <field>
-        <name>VOL_LOCATION</name>
+        <name>VOL_CAT</name>
         <ascending>Y</ascending>
         <case_sensitive>N</case_sensitive>
         <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_TYPE</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
-        <presorted>N</presorted>
-      </field>
-      <field>
-        <name>VOL_STATUS</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>2</collator_strength>
+        <collator_strength>0</collator_strength>
         <presorted>N</presorted>
       </field>
     </fields>
@@ -7818,41 +7690,6 @@
     </GUI>
   </step>
   <step>
-    <name>Unique pla_type</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field/>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>PLA_TYPE</name>
-        <case_insensitive>N</case_insensitive>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1376</xloc>
-      <yloc>736</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Unique ear_id</name>
     <type>Unique</type>
     <description/>
@@ -7888,6 +7725,41 @@
     </GUI>
   </step>
   <step>
+    <name>Unique pla_type</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>PLA_TYPE</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1376</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Unique volcanoes</name>
     <type>Unique</type>
     <description/>
@@ -7908,16 +7780,12 @@
         <case_insensitive>Y</case_insensitive>
       </field>
       <field>
-        <name>VOL_YEAR</name>
-        <case_insensitive>Y</case_insensitive>
-      </field>
-      <field>
         <name>VOL_COUNTRY</name>
         <case_insensitive>Y</case_insensitive>
       </field>
       <field>
-        <name>VOL_LOCATION</name>
-        <case_insensitive>Y</case_insensitive>
+        <name>VOL_CAT</name>
+        <case_insensitive>N</case_insensitive>
       </field>
     </fields>
     <attributes/>
@@ -7945,7 +7813,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\volcanoes around the world in 2021.csv</filename>
+    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\volcanoes around the world in 2021.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
