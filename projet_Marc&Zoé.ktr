@@ -524,16 +524,16 @@
     </hop>
     <hop>
       <from>Sort All volcanoes</from>
-      <to>Filter rows</to>
+      <to>Filter start year</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows</from>
+      <from>Filter start year</from>
       <to>Dummy (do nothing)</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows</from>
+      <from>Filter start year</from>
       <to>All volcanoes</to>
       <enabled>Y</enabled>
     </hop>
@@ -1004,31 +1004,31 @@
     </hop>
     <hop>
       <from>Merge join</from>
-      <to>Select values</to>
+      <to>Select Airplane Crash</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values</from>
+      <from>Select Airplane Crash</from>
       <to>Sort cou</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Merge country</from>
-      <to>Select values 2</to>
+      <to>Select countries</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values 2</from>
+      <from>Select countries</from>
       <to>Sort volc</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>inner join ear/country</from>
-      <to>Select values 3</to>
+      <to>Select earth.</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values 3</from>
+      <from>Select earth.</from>
       <to>Sort volc 3</to>
       <enabled>Y</enabled>
     </hop>
@@ -1053,57 +1053,57 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Add constants</from>
-      <to>Sort rows</to>
+      <from>Add constants crash</from>
+      <to>Sort everything</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Sequence Volcanoes</from>
-      <to>Sort rows 2</to>
+      <to>Sort vol_country</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>add COU_ID</from>
-      <to>Sort rows 3</to>
+      <to>Sort cou_name</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 3</from>
-      <to>Merge join 2</to>
+      <from>Sort cou_name</from>
+      <to>Merge cou_name</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 2</from>
-      <to>Merge join 2</to>
+      <from>Sort vol_country</from>
+      <to>Merge cou_name</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Merge join 2</from>
+      <from>Merge cou_name</from>
       <to>Sort volc 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows</from>
-      <to>Filter rows 2</to>
+      <from>Sort everything</from>
+      <to>Filter vol_year</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows 2</from>
-      <to>Filter rows 3</to>
+      <from>Filter vol_year</from>
+      <to>Filter ear_year</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows 3</from>
-      <to>Sort rows 4</to>
+      <from>Filter ear_year</from>
+      <to>Sort cra_year</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows 3</from>
-      <to>Sort rows 5</to>
+      <from>Filter ear_year</from>
+      <to>Sort ear_year</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values 5</from>
+      <from>Select all values for fait</from>
       <to>PROJECT_FAIT</to>
       <enabled>Y</enabled>
     </hop>
@@ -1114,11 +1114,11 @@
     </hop>
     <hop>
       <from>add pla_id</from>
-      <to>Sort rows 6</to>
+      <to>Sort type</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 6</from>
+      <from>Sort type</from>
       <to>InnerJoinPlaType</to>
       <enabled>Y</enabled>
     </hop>
@@ -1133,58 +1133,58 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 4</from>
-      <to>Set field value</to>
+      <from>Sort cra_year</from>
+      <to>Set vol_year&amp;cou_id-cra</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 5</from>
-      <to>Set field value 2</to>
+      <from>Sort ear_year</from>
+      <to>Set vol_year&amp;cou_id - ear</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Set field value</from>
-      <to>Select values 5</to>
+      <from>Set vol_year&amp;cou_id-cra</from>
+      <to>Select all values for fait</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Set field value 2</from>
-      <to>Select values 5</to>
+      <from>Set vol_year&amp;cou_id - ear</from>
+      <to>Select all values for fait</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter rows 2</from>
-      <to>Select values 5</to>
+      <from>Filter vol_year</from>
+      <to>Select all values for fait</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Unique rows</from>
-      <to>Add constants</to>
+      <from>Unique ear_id</from>
+      <to>Add constants crash</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>merge ear/volc</from>
-      <to>Sort rows 8</to>
+      <to>Sort ear_id</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 8</from>
-      <to>Unique rows</to>
+      <from>Sort ear_id</from>
+      <to>Unique ear_id</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>merge volc</from>
-      <to>Sort rows 9</to>
+      <to>Sort crash id</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 9</from>
-      <to>Sort rows</to>
+      <from>Sort crash id</from>
+      <to>Sort everything</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Add constants</name>
+    <name>Add constants crash</name>
     <type>Constant</type>
     <description/>
     <distribute>Y</distribute>
@@ -1266,7 +1266,7 @@
     </remotesteps>
     <GUI>
       <xloc>2448</xloc>
-      <yloc>176</yloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1365,7 +1365,7 @@
     </remotesteps>
     <GUI>
       <xloc>2288</xloc>
-      <yloc>224</yloc>
+      <yloc>256</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1380,7 +1380,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\Airplane_Crashes_and_Fatalities_Since_1908_20190820105639.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1593,7 +1593,7 @@
     </remotesteps>
     <GUI>
       <xloc>592</xloc>
-      <yloc>608</yloc>
+      <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1614,7 +1614,7 @@
     <append>N</append>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_VOLCANOES</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_VOLCANOES</name>
       <extention>xls</extention>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
       <create_parent_folder>Y</create_parent_folder>
@@ -1716,7 +1716,7 @@
     </remotesteps>
     <GUI>
       <xloc>800</xloc>
-      <yloc>160</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1748,7 +1748,7 @@
     </remotesteps>
     <GUI>
       <xloc>544</xloc>
-      <yloc>896</yloc>
+      <yloc>928</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1808,7 +1808,7 @@
     </remotesteps>
     <GUI>
       <xloc>912</xloc>
-      <yloc>640</yloc>
+      <yloc>672</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1837,7 +1837,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_CRASH</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_CRASH</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -1901,7 +1901,7 @@
     </remotesteps>
     <GUI>
       <xloc>2096</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1942,7 +1942,7 @@
     </remotesteps>
     <GUI>
       <xloc>1008</xloc>
-      <yloc>640</yloc>
+      <yloc>672</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2008,7 +2008,7 @@
     </remotesteps>
     <GUI>
       <xloc>784</xloc>
-      <yloc>608</yloc>
+      <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2033,7 +2033,7 @@
     </remotesteps>
     <GUI>
       <xloc>672</xloc>
-      <yloc>48</yloc>
+      <yloc>80</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2048,7 +2048,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\earthquake_data.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\earthquake_data.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -2283,7 +2283,7 @@
     </remotesteps>
     <GUI>
       <xloc>80</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2298,7 +2298,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\eruptions.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\eruptions.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -2489,7 +2489,7 @@
     </remotesteps>
     <GUI>
       <xloc>80</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2524,12 +2524,12 @@
     </remotesteps>
     <GUI>
       <xloc>64</xloc>
-      <yloc>336</yloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Filter rows</name>
+    <name>Filter start year</name>
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -2568,12 +2568,12 @@
     </remotesteps>
     <GUI>
       <xloc>672</xloc>
-      <yloc>144</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Filter rows 2</name>
+    <name>Filter vol_year</name>
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -2583,8 +2583,8 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to>Filter rows 3</send_true_to>
-    <send_false_to>Select values 5</send_false_to>
+    <send_true_to>Filter ear_year</send_true_to>
+    <send_false_to>Select all values for fait</send_false_to>
     <compare>
       <condition>
         <negated>N</negated>
@@ -2602,13 +2602,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2432</xloc>
-      <yloc>400</yloc>
+      <xloc>2304</xloc>
+      <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Filter rows 3</name>
+    <name>Filter ear_year</name>
     <type>FilterRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -2618,8 +2618,8 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to>Sort rows 4</send_true_to>
-    <send_false_to>Sort rows 5</send_false_to>
+    <send_true_to>Sort cra_year</send_true_to>
+    <send_false_to>Sort ear_year</send_false_to>
     <compare>
       <condition>
         <negated>N</negated>
@@ -2637,8 +2637,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2576</xloc>
-      <yloc>400</yloc>
+      <xloc>2448</xloc>
+      <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2678,7 +2678,7 @@
     </remotesteps>
     <GUI>
       <xloc>2208</xloc>
-      <yloc>896</yloc>
+      <yloc>928</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2714,7 +2714,7 @@
     </remotesteps>
     <GUI>
       <xloc>1760</xloc>
-      <yloc>416</yloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2749,7 +2749,7 @@
     </remotesteps>
     <GUI>
       <xloc>1760</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2766,7 +2766,7 @@
     </partitioning>
     <join_type>INNER</join_type>
     <step1>sort pla_type 2</step1>
-    <step2>Sort rows 6</step2>
+    <step2>Sort type</step2>
     <keys_1>
       <key>AC Type</key>
       <key>Date</key>
@@ -2785,7 +2785,7 @@
     </remotesteps>
     <GUI>
       <xloc>1504</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2821,7 +2821,7 @@
     </remotesteps>
     <GUI>
       <xloc>1584</xloc>
-      <yloc>160</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2854,8 +2854,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2048</xloc>
-      <yloc>320</yloc>
+      <xloc>2064</xloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2891,12 +2891,12 @@
     </remotesteps>
     <GUI>
       <xloc>1888</xloc>
-      <yloc>416</yloc>
+      <yloc>448</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Merge join 2</name>
+    <name>Merge cou_name</name>
     <type>MergeJoin</type>
     <description/>
     <distribute>Y</distribute>
@@ -2907,8 +2907,8 @@
       <schema_name/>
     </partitioning>
     <join_type>INNER</join_type>
-    <step1>Sort rows 2</step1>
-    <step2>Sort rows 3</step2>
+    <step1>Sort vol_country</step1>
+    <step2>Sort cou_name</step2>
     <keys_1>
       <key>VOL_COUNTRY</key>
     </keys_1>
@@ -2925,7 +2925,7 @@
     </remotesteps>
     <GUI>
       <xloc>2048</xloc>
-      <yloc>96</yloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2959,7 +2959,7 @@
     </remotesteps>
     <GUI>
       <xloc>432</xloc>
-      <yloc>144</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2995,7 +2995,7 @@
     </remotesteps>
     <GUI>
       <xloc>1328</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3031,7 +3031,7 @@
     </remotesteps>
     <GUI>
       <xloc>1024</xloc>
-      <yloc>400</yloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3072,7 +3072,7 @@
     </remotesteps>
     <GUI>
       <xloc>1952</xloc>
-      <yloc>672</yloc>
+      <yloc>704</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3101,7 +3101,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_COUNTRY</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_COUNTRY</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3153,7 +3153,7 @@
     </remotesteps>
     <GUI>
       <xloc>2032</xloc>
-      <yloc>160</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3182,7 +3182,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_EARTHQUAKE</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_EARTHQUAKE</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3234,7 +3234,7 @@
     </remotesteps>
     <GUI>
       <xloc>1600</xloc>
-      <yloc>320</yloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3263,7 +3263,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_FAIT</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_FAIT</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3386,8 +3386,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2704</xloc>
-      <yloc>656</yloc>
+      <xloc>2576</xloc>
+      <yloc>896</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3416,7 +3416,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_OPERATOR</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_OPERATOR</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3468,7 +3468,7 @@
     </remotesteps>
     <GUI>
       <xloc>1856</xloc>
-      <yloc>784</yloc>
+      <yloc>816</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3497,7 +3497,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_PLANE</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_PLANE</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3549,7 +3549,7 @@
     </remotesteps>
     <GUI>
       <xloc>1648</xloc>
-      <yloc>704</yloc>
+      <yloc>736</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3578,7 +3578,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_VOLCANOES</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_VOLCANOES</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3654,7 +3654,7 @@
     </remotesteps>
     <GUI>
       <xloc>2304</xloc>
-      <yloc>16</yloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3683,7 +3683,7 @@
     <fileNameField/>
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\PROJECT_YEAR</name>
+      <name>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\PROJECT_YEAR</name>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
       <extention>csv</extention>
@@ -3723,7 +3723,7 @@
     </remotesteps>
     <GUI>
       <xloc>1600</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3760,7 +3760,7 @@
     </remotesteps>
     <GUI>
       <xloc>1184</xloc>
-      <yloc>400</yloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3799,7 +3799,7 @@
     </remotesteps>
     <GUI>
       <xloc>688</xloc>
-      <yloc>640</yloc>
+      <yloc>672</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3838,7 +3838,7 @@
     </remotesteps>
     <GUI>
       <xloc>192</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3856,79 +3856,60 @@
     <fields>
       <field>
         <name>Date</name>
-        <rename/>
       </field>
       <field>
         <name>Country</name>
-        <rename/>
       </field>
       <field>
         <name>Operator</name>
-        <rename/>
       </field>
       <field>
         <name>AC Type</name>
-        <rename/>
       </field>
       <field>
         <name>Fatalities</name>
-        <rename/>
       </field>
       <field>
         <name>Time</name>
-        <rename/>
       </field>
       <field>
         <name>Location</name>
-        <rename/>
       </field>
       <field>
         <name>Flight #</name>
-        <rename/>
       </field>
       <field>
         <name>Route</name>
-        <rename/>
       </field>
       <field>
         <name>Registration</name>
-        <rename/>
       </field>
       <field>
         <name>cn/ln</name>
-        <rename/>
       </field>
       <field>
         <name>Aboard</name>
-        <rename/>
       </field>
       <field>
         <name>Aboard Passangers</name>
-        <rename/>
       </field>
       <field>
         <name>Aboard Crew</name>
-        <rename/>
       </field>
       <field>
         <name>Fatalities Passangers</name>
-        <rename/>
       </field>
       <field>
         <name>Fatalities Crew</name>
-        <rename/>
       </field>
       <field>
         <name>Ground</name>
-        <rename/>
       </field>
       <field>
         <name>Summary</name>
-        <rename/>
       </field>
       <field>
         <name>YEAR_NUMBER</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -3942,7 +3923,7 @@
     </remotesteps>
     <GUI>
       <xloc>1168</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3999,7 +3980,7 @@
     </remotesteps>
     <GUI>
       <xloc>320</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4021,7 +4002,6 @@
       </field>
       <field>
         <name>Date</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -4035,7 +4015,7 @@
     </remotesteps>
     <GUI>
       <xloc>1152</xloc>
-      <yloc>784</yloc>
+      <yloc>816</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4057,7 +4037,6 @@
       </field>
       <field>
         <name>Date</name>
-        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
     </fields>
@@ -4071,7 +4050,7 @@
     </remotesteps>
     <GUI>
       <xloc>1152</xloc>
-      <yloc>672</yloc>
+      <yloc>704</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4102,7 +4081,7 @@
     </remotesteps>
     <GUI>
       <xloc>1520</xloc>
-      <yloc>896</yloc>
+      <yloc>928</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4187,7 +4166,7 @@
     </remotesteps>
     <GUI>
       <xloc>416</xloc>
-      <yloc>336</yloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4218,7 +4197,7 @@
     </remotesteps>
     <GUI>
       <xloc>1008</xloc>
-      <yloc>896</yloc>
+      <yloc>928</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4250,7 +4229,7 @@
     </remotesteps>
     <GUI>
       <xloc>1008</xloc>
-      <yloc>784</yloc>
+      <yloc>816</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4282,7 +4261,7 @@
     </remotesteps>
     <GUI>
       <xloc>1280</xloc>
-      <yloc>160</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4335,7 +4314,7 @@
     </remotesteps>
     <GUI>
       <xloc>736</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4437,7 +4416,7 @@
     </remotesteps>
     <GUI>
       <xloc>1248</xloc>
-      <yloc>512</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -4522,12 +4501,12 @@
     </remotesteps>
     <GUI>
       <xloc>736</xloc>
-      <yloc>448</yloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Select values</name>
+    <name>Select Airplane Crash</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -4776,12 +4755,12 @@
     </remotesteps>
     <GUI>
       <xloc>1984</xloc>
-      <yloc>400</yloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Select values 2</name>
+    <name>Select countries</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -4838,12 +4817,12 @@
     </remotesteps>
     <GUI>
       <xloc>2128</xloc>
-      <yloc>368</yloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Select values 3</name>
+    <name>Select earth.</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -5078,13 +5057,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2112</xloc>
-      <yloc>240</yloc>
+      <xloc>2144</xloc>
+      <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Select values 5</name>
+    <name>Select all values for fait</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -5138,8 +5117,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2496</xloc>
-      <yloc>656</yloc>
+      <xloc>2368</xloc>
+      <yloc>896</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5185,7 +5164,7 @@
     </remotesteps>
     <GUI>
       <xloc>208</xloc>
-      <yloc>144</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5245,7 +5224,7 @@
     </remotesteps>
     <GUI>
       <xloc>928</xloc>
-      <yloc>80</yloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5276,7 +5255,7 @@
     </remotesteps>
     <GUI>
       <xloc>736</xloc>
-      <yloc>336</yloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5307,7 +5286,7 @@
     </remotesteps>
     <GUI>
       <xloc>1008</xloc>
-      <yloc>544</yloc>
+      <yloc>576</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5339,7 +5318,7 @@
     </remotesteps>
     <GUI>
       <xloc>1040</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5373,8 +5352,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2144</xloc>
-      <yloc>16</yloc>
+      <xloc>1856</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5405,7 +5384,77 @@
     </remotesteps>
     <GUI>
       <xloc>272</xloc>
-      <yloc>448</yloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Set vol_year&amp;cou_id-cra</name>
+    <type>SetValueField</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_YEAR</name>
+        <replaceby>CRA_YEAR_NUMBER</replaceby>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <replaceby>CRA_COU_ID</replaceby>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2544</xloc>
+      <yloc>832</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Set vol_year&amp;cou_id - ear</name>
+    <type>SetValueField</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>VOL_YEAR</name>
+        <replaceby>EAR_YEAR_NUMBER</replaceby>
+      </field>
+      <field>
+        <name>COU_ID</name>
+        <replaceby>EAR_COU_ID</replaceby>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2432</xloc>
+      <yloc>784</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5511,7 +5560,7 @@
     </remotesteps>
     <GUI>
       <xloc>560</xloc>
-      <yloc>144</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5745,7 +5794,7 @@
     </remotesteps>
     <GUI>
       <xloc>1808</xloc>
-      <yloc>672</yloc>
+      <yloc>704</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5787,7 +5836,7 @@
     </remotesteps>
     <GUI>
       <xloc>1280</xloc>
-      <yloc>784</yloc>
+      <yloc>816</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5829,7 +5878,7 @@
     </remotesteps>
     <GUI>
       <xloc>1632</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5871,7 +5920,7 @@
     </remotesteps>
     <GUI>
       <xloc>1744</xloc>
-      <yloc>160</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5912,8 +5961,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2048</xloc>
-      <yloc>400</yloc>
+      <xloc>2064</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5955,7 +6004,7 @@
     </remotesteps>
     <GUI>
       <xloc>1920</xloc>
-      <yloc>256</yloc>
+      <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -5997,7 +6046,7 @@
     </remotesteps>
     <GUI>
       <xloc>2208</xloc>
-      <yloc>608</yloc>
+      <yloc>640</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6191,7 +6240,7 @@
     </remotesteps>
     <GUI>
       <xloc>464</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6233,7 +6282,7 @@
     </remotesteps>
     <GUI>
       <xloc>1424</xloc>
-      <yloc>160</yloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6283,7 +6332,7 @@
     </remotesteps>
     <GUI>
       <xloc>1952</xloc>
-      <yloc>512</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6333,7 +6382,7 @@
     </remotesteps>
     <GUI>
       <xloc>1664</xloc>
-      <yloc>384</yloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6439,7 +6488,7 @@
     </remotesteps>
     <GUI>
       <xloc>544</xloc>
-      <yloc>336</yloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6497,7 +6546,7 @@
     </remotesteps>
     <GUI>
       <xloc>1040</xloc>
-      <yloc>320</yloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6539,7 +6588,7 @@
     </remotesteps>
     <GUI>
       <xloc>432</xloc>
-      <yloc>32</yloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -6581,12 +6630,12 @@
     </remotesteps>
     <GUI>
       <xloc>1264</xloc>
-      <yloc>672</yloc>
+      <yloc>704</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows</name>
+    <name>Sort everything</name>
     <type>SortRows</type>
     <description/>
     <distribute>N</distribute>
@@ -6782,13 +6831,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2544</xloc>
-      <yloc>304</yloc>
+      <xloc>2480</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows 2</name>
+    <name>Sort vol_country</name>
     <type>SortRows</type>
     <description/>
     <distribute>N</distribute>
@@ -6824,13 +6873,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2144</xloc>
-      <yloc>80</yloc>
+      <xloc>1936</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows 3</name>
+    <name>Sort cou_name</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -6867,12 +6916,12 @@
     </remotesteps>
     <GUI>
       <xloc>1936</xloc>
-      <yloc>96</yloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows 4</name>
+    <name>Sort cra_year</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -6908,13 +6957,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2672</xloc>
-      <yloc>480</yloc>
+      <xloc>2544</xloc>
+      <yloc>720</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows 5</name>
+    <name>Sort ear_year</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -6950,8 +6999,176 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2528</xloc>
-      <yloc>480</yloc>
+      <xloc>2400</xloc>
+      <yloc>720</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort type</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>PLA_TYPE</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1504</xloc>
+      <yloc>688</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 7</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>OPE_NAME</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1712</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort ear_id</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>EAR_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2336</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort crash id</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>Y</unique_rows>
+    <fields>
+      <field>
+        <name>CRA_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2352</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7001,7 +7218,7 @@
     </remotesteps>
     <GUI>
       <xloc>2160</xloc>
-      <yloc>448</yloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7101,7 +7318,7 @@
     </remotesteps>
     <GUI>
       <xloc>2224</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7199,7 +7416,7 @@
     </remotesteps>
     <GUI>
       <xloc>1312</xloc>
-      <yloc>80</yloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7241,7 +7458,7 @@
     </remotesteps>
     <GUI>
       <xloc>320</xloc>
-      <yloc>144</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7291,7 +7508,7 @@
     </remotesteps>
     <GUI>
       <xloc>1824</xloc>
-      <yloc>512</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7333,7 +7550,7 @@
     </remotesteps>
     <GUI>
       <xloc>1424</xloc>
-      <yloc>512</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7375,7 +7592,7 @@
     </remotesteps>
     <GUI>
       <xloc>1504</xloc>
-      <yloc>384</yloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7417,7 +7634,7 @@
     </remotesteps>
     <GUI>
       <xloc>912</xloc>
-      <yloc>464</yloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7459,7 +7676,7 @@
     </remotesteps>
     <GUI>
       <xloc>1296</xloc>
-      <yloc>400</yloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7501,7 +7718,7 @@
     </remotesteps>
     <GUI>
       <xloc>1136</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7561,7 +7778,7 @@
     </remotesteps>
     <GUI>
       <xloc>64</xloc>
-      <yloc>448</yloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7596,7 +7813,7 @@
     </remotesteps>
     <GUI>
       <xloc>1424</xloc>
-      <yloc>784</yloc>
+      <yloc>816</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7630,8 +7847,43 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1408</xloc>
-      <yloc>672</yloc>
+      <xloc>1376</xloc>
+      <yloc>736</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Unique ear_id</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>EAR_ID</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>2448</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7678,7 +7930,7 @@
     </remotesteps>
     <GUI>
       <xloc>1616</xloc>
-      <yloc>80</yloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7693,7 +7945,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>D:\Cours\Semestre6\62-62ValorisationDesDonnees\Billard\Project\BiProject\volcanoes around the world in 2021.csv</filename>
+    <filename>C:\Users\Zoe_u\OneDrive\Bureau\HEG\Semestre 6\Billard - Valorisation des données\BiProject\volcanoes around the world in 2021.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -7840,7 +8092,7 @@
     </remotesteps>
     <GUI>
       <xloc>80</xloc>
-      <yloc>144</yloc>
+      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7874,8 +8126,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1872</xloc>
-      <yloc>160</yloc>
+      <xloc>1856</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7910,7 +8162,7 @@
     </remotesteps>
     <GUI>
       <xloc>1376</xloc>
-      <yloc>320</yloc>
+      <yloc>352</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7945,7 +8197,7 @@
     </remotesteps>
     <GUI>
       <xloc>1696</xloc>
-      <yloc>784</yloc>
+      <yloc>816</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -7980,7 +8232,7 @@
     </remotesteps>
     <GUI>
       <xloc>1984</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8014,8 +8266,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1520</xloc>
-      <yloc>704</yloc>
+      <xloc>1504</xloc>
+      <yloc>768</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8060,7 +8312,7 @@
     </remotesteps>
     <GUI>
       <xloc>192</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8094,7 +8346,7 @@
     </remotesteps>
     <GUI>
       <xloc>2048</xloc>
-      <yloc>240</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8128,7 +8380,7 @@
     </remotesteps>
     <GUI>
       <xloc>1712</xloc>
-      <yloc>512</yloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8162,7 +8414,7 @@
     </remotesteps>
     <GUI>
       <xloc>1184</xloc>
-      <yloc>464</yloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8253,7 +8505,7 @@
     </remotesteps>
     <GUI>
       <xloc>272</xloc>
-      <yloc>336</yloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8350,7 +8602,7 @@
     </remotesteps>
     <GUI>
       <xloc>416</xloc>
-      <yloc>448</yloc>
+      <yloc>480</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8386,7 +8638,7 @@
     </remotesteps>
     <GUI>
       <xloc>2160</xloc>
-      <yloc>176</yloc>
+      <yloc>208</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8422,7 +8674,7 @@
     </remotesteps>
     <GUI>
       <xloc>2272</xloc>
-      <yloc>384</yloc>
+      <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8472,7 +8724,7 @@
     </remotesteps>
     <GUI>
       <xloc>1904</xloc>
-      <yloc>336</yloc>
+      <yloc>368</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8514,7 +8766,7 @@
     </remotesteps>
     <GUI>
       <xloc>1360</xloc>
-      <yloc>592</yloc>
+      <yloc>624</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8564,7 +8816,7 @@
     </remotesteps>
     <GUI>
       <xloc>1568</xloc>
-      <yloc>464</yloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -8605,280 +8857,7 @@
     </remotesteps>
     <GUI>
       <xloc>320</xloc>
-      <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows 6</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>PLA_TYPE</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1504</xloc>
-      <yloc>656</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows 7</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>OPE_NAME</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>1712</xloc>
-      <yloc>704</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Set field value</name>
-    <type>SetValueField</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>VOL_YEAR</name>
-        <replaceby>CRA_YEAR_NUMBER</replaceby>
-      </field>
-      <field>
-        <name>COU_ID</name>
-        <replaceby>CRA_COU_ID</replaceby>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2624</xloc>
-      <yloc>576</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Set field value 2</name>
-    <type>SetValueField</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>VOL_YEAR</name>
-        <replaceby>EAR_YEAR_NUMBER</replaceby>
-      </field>
-      <field>
-        <name>COU_ID</name>
-        <replaceby>EAR_COU_ID</replaceby>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2528</xloc>
-      <yloc>576</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Unique rows</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field/>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>EAR_ID</name>
-        <case_insensitive>N</case_insensitive>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2448</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows 8</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>EAR_ID</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2336</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows 9</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>Y</unique_rows>
-    <fields>
-      <field>
-        <name>CRA_ID</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>2352</xloc>
-      <yloc>352</yloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
